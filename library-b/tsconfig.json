@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "types": ["../library-a"],
+    "typeRoots": ["../library-a/types"],
+    "paths": {
+      "library-a": ["../library-a/index.ts"]
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "name": "library-a",
+  "types": "./types/library-a.d.ts"
+}
