@@ -2,8 +2,8 @@
   "compilerOptions": {
     "outDir": "./dist",
 
-    "types": ["../library-a"],
-    "typeRoots": ["../library-a/types"],
+    "types": ["../library-a/src"],
+    "typeRoots": ["../library-a/src/types"],
     "paths": {
       "library-a": ["../library-a/src/index.ts"]
     },
