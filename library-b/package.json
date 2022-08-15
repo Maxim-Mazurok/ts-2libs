@@ -1,6 +1,0 @@
-{
-  "name": "library-b",
-  "dependencies": {
-    "library-a": "file:../library-a"
-  }
-}
