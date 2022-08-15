@@ -1,11 +1,20 @@
 # Using one TS lib in another inside monorepo
 
-This is part of the answer for SO question [How do I use the tsconfig.json "types" field when in a monorepo?](https://stackoverflow.com/questions/73262618/how-do-i-use-the-tsconfig-json-types-field-when-in-a-monorepo)
+<!-- markdownlint-disable MD033 -->
 
-## Getting started
+This is part of the answer for SO question: [How do I use the tsconfig.json "types" field when in a monorepo?](https://stackoverflow.com/questions/73262618/how-do-i-use-the-tsconfig-json-types-field-when-in-a-monorepo)
 
-1. close this repo
-2. run `npm ci` in the root folder (no need to install/link libraries A and B)
-3. `cd library-b && tsc --noEmit` - observe no errors
+## Getting Started
 
-The library-b uses both `someGlobalFunction()` from the library-a type definitions, and `const LIB_A` from regular exports of the library-a
+- Clone the repository:
+  - `git clone git@github.com:Zamiell/ts-2libs.git`
+  - `cd ts-2libs`
+- Install deps:
+  - `npm ci`
+- Observe that there are no errors when compiling:
+  - `./packages/library-2/build.sh` <br>
+  (this is just a wrapper for `npx tsc`)
+- Check out the branch with only [one change](https://github.com/Zamiell/ts-2libs/commit/941fc43a86ac6c59ca7a4ebeca84d2317b950554):
+  - `git checkout change`
+- Observe that there are errors when compiling:
+  - `./packages/library-2/build.sh`
