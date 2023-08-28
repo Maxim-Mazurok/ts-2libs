@@ -4,7 +4,7 @@ This is part of the answer for SO question [How do I use the tsconfig.json "type
 
 ## Getting started
 
-1. close this repo
+1. clone this repo
 2. run `npm ci` in the root folder (no need to install/link libraries A and B)
 3. `cd library-b && tsc --noEmit` - observe no errors
 
